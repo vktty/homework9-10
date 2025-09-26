@@ -126,7 +126,7 @@ button {
 .projects-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 45px;
+    gap: 0 65px;
     padding: 100px 0 100px 0;
 }
 .project-card {
