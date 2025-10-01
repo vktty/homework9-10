@@ -53,14 +53,14 @@ button {
 }
 
 .description {
-    width: 540px;
+    max-width: 540px;
     color: var(--gray-dark);
     line-height: 1.64;
 }
 
 
 .container {
-    width: 1120px;
+    max-width: 1120px;
     margin-inline: auto;
 }
 .header {
@@ -69,6 +69,7 @@ button {
 
 .navigation__list {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 79px;
 }
 .navigation__item {
@@ -126,7 +127,7 @@ button {
 .projects-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 0 65px;
+    gap: 20px 65px;
     padding: 100px 0 100px 0;
 }
 .project-card {
@@ -171,11 +172,11 @@ button {
     position: relative;
 }
 .work__image-video {
-    width: 1120px;
+    width: 100%;
     height: auto;
 }
 .work__image-play {
-    width: 100px;
+    width: 9%;
     height: auto;
     position: absolute;
     top: 42%;
@@ -197,4 +198,28 @@ button {
     padding-bottom: 50px;
     font-size: 0.8125rem;
     line-height: 1.64;
+}
+
+@media (max-width: 1140px) {
+    .navigation__list, .header-info, .navigation__list, .about-me, .footer {
+        padding: 36px 24px 0 24px;
+    }
+
+    .work {
+        padding: 36px 30px 50px 30px;
+    }
+
+    .projects-cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .header-info__button {
+        width: 100%;
+    }
+
+    .projects-cards {
+        padding: 50px 24px;
+    }
 }
