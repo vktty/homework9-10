@@ -1,0 +1,36 @@
+@use "variables" as *;
+.project {
+    background-color: $primary-color;
+
+    .projects-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 65px;
+        padding: 100px 0 100px 0;
+
+        .project-card {
+            display: flex;
+            gap: 0 20px;
+            align-items: center;
+
+            .project-card__image {
+                width: 50px;
+                height: auto;
+            }
+
+            .project-card__info {
+                display: flex;
+                flex-direction: column;
+                color: $white;
+
+                .project-card__number {
+                    font-size: 1.3125rem;
+                    font-weight: 500;
+                }
+                .project-card__name {
+                    line-height: 1.64;
+                }
+            }
+        }
+    }
+}
