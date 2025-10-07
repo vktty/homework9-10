@@ -46,4 +46,14 @@
     .navigation__list, .header-info {
         padding: 36px 24px 0 24px;
     }
+
+    .navigation__list {
+        justify-content: center;
+    }
+}
+
+@include media-down(md) {
+    .navigation__list {
+        justify-content: center;
+    }
 }

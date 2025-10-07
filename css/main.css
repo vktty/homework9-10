@@ -100,6 +100,14 @@ button {
   .navigation__list, .header-info {
     padding: 36px 24px 0 24px;
   }
+  .navigation__list {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation__list {
+    justify-content: center;
+  }
 }
 .about-me__title {
   padding-top: 112px;
@@ -217,6 +225,12 @@ button {
 @media screen and (max-width: 768px) {
   .footer {
     text-align: center;
+  }
+  .footer__title {
+    font-size: 1.5rem;
+  }
+  .footer__description {
+    font-size: 1rem;
   }
 }
 .description {

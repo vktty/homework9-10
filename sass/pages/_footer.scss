@@ -28,5 +28,13 @@
 @include media-down(md) {
     .footer {
         text-align: center;
+        
+        &__title {
+            font-size: 1.5rem;
+        }
+    
+        &__description {
+            font-size: 1rem;
+        }
     }
 }
