@@ -1,4 +1,6 @@
-@use "variables" as *;
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
 .footer {
     padding-top: 50px;
     background-color: $primary-color;
@@ -14,5 +16,17 @@
         padding-bottom: 50px;
         font-size: 0.8125rem;
         line-height: 1.64;
+    }
+}
+
+@include media-down(xl) {
+    .footer {
+        padding: 36px 24px 0 24px;
+    }
+}
+
+@include media-down(md) {
+    .footer {
+        text-align: center;
     }
 }

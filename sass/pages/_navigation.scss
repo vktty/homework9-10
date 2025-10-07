@@ -1,0 +1,49 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.navigation {
+    &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 79px;
+
+        .navigation__item {
+            padding-right: 50px;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            line-height: 1.64;
+
+            &:last-of-type {
+                padding-right: 0;
+            }
+        }
+
+        .navigation__link {
+            color: $black;
+        }
+
+        .navigation__link--active {
+            color: $primary-color;
+        }
+    }
+}
+
+
+.header {
+    background-color: $gray-light;
+}
+
+.header-info__title {
+    margin-top: 145px;
+    font-size: 3rem;
+}
+.header-info__description {
+    margin-top: 35px;
+}
+
+
+@include media-down(xl) {
+    .navigation__list, .header-info {
+        padding: 36px 24px 0 24px;
+    }
+}
