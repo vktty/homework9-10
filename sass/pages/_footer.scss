@@ -1,0 +1,40 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.footer {
+    padding-top: 50px;
+    background-color: $primary-color;
+    color: $white;
+
+    &__title {
+        margin-bottom: 20px;
+        font-size: 1.3125rem;
+        line-height: 1rem;
+    }
+
+    &__description {
+        padding-bottom: 50px;
+        font-size: 0.8125rem;
+        line-height: 1.64;
+    }
+}
+
+@include media-down(xl) {
+    .footer {
+        padding: 36px 24px 0 24px;
+    }
+}
+
+@include media-down(md) {
+    .footer {
+        text-align: center;
+        
+        &__title {
+            font-size: 1.5rem;
+        }
+    
+        &__description {
+            font-size: 1rem;
+        }
+    }
+}

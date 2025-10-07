@@ -1,0 +1,46 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+.work {
+    background-color: $gray-light;
+    padding-bottom: 100px;
+
+    &__title {
+        padding-top: 100px;
+        margin-bottom: 50px;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 1rem;
+    }
+
+    &__description {
+        margin-inline: auto;
+        margin-bottom: 57px;
+        text-align: center;
+    }
+
+    &__video {
+        max-width: 1120px;
+        position: relative;
+    
+        .work__image-video {
+            width: 100%;
+            height: auto;
+        }
+    
+        .work__image-play {
+            width: 9%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@include media-down(xl) {
+    .work {
+        padding: 36px 30px 50px 30px;
+    }
+}

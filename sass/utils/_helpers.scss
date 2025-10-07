@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+.description {
+    max-width: 540px;
+    color: $gray-dark;
+    line-height: 1.64;
+}
